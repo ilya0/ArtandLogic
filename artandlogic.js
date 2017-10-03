@@ -1,19 +1,34 @@
-
 //converts int to special text
 
 function convertint(integer){
   //add 8192 to raw value
-  integer = integer+8182
-  console.log("intermediate decimal is"+integer);
+  intermediate = integer+8192
+  console.log("intermediate decimal is "+intermediate);
+  hexString = intermediate.toString(16);
+  console.log("hex "+hexString);
+
 }
 
-//converts text to integer
-function converttext(text){
-  console.log(text);
-}
+// //converts text to integer
+// function convertbytes(hi,lo){
 
-convertinit("test");
-converttext("test");
+//   yourNumber = parseInt(hexString, 16);
+//   console.log(text);
+// }
+
+ convertint(0);
+// convertint(-8192);
+// convertint(8191);
+// convertint(-4096);
+
+
+// convertbytes(40,00);
+// convertbytes(00,00);
+// convertbytes(7f,7f);
+// convertbytes(50,00);
+// convertbytes(0A,05);
+// convertbytes(55,00);
+
 
 // range will be from  14-bit range [-8192..+8191]
 // return a 4 character
