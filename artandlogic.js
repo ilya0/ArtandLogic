@@ -16,10 +16,10 @@ function convertint(integer){
 //   console.log(text);
 // }
 
- convertint(0);
-// convertint(-8192);
-// convertint(8191);
-// convertint(-4096);
+convertint(0);
+convertint(-8192);
+convertint(8191);
+convertint(-4096);
 
 
 // convertbytes(40,00);
