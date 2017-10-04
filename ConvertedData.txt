@@ -1,0 +1,14 @@
+ConvertedData.txt
+
+
+
+Unencoded value: 6111 Encoded hex 6f5f
+Unencoded value: 340 Encoded hex 4254
+Unencoded value: -2628 Encoded hex 2b3c
+Unencoded value: -255 Encoded hex 3e01
+Unencoded value: 7550 Encoded hex 7a7e
+Encoded hex: 0A0A Unencoded Value: -6902
+Encoded hex: 0029 Unencoded Value: -8151
+Encoded hex: 3F0F Unencoded Value: -113
+Encoded hex: 4400 Unencoded Value: 512
+Encoded hex: 5e7F Unencoded Value: 3967

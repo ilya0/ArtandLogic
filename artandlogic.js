@@ -1,10 +1,10 @@
 //converts int to special text
 
 function convertint(intermediate){
-
+var unencoded = intermediate;
   //add 8192 to raw value
     var intermediate = intermediate+8192;
-    console.log("intermediate decimal is "+intermediate);
+    // console.log("intermediate decimal is "+intermediate);
 
   // //intermediate decimal
   // var hexString = intermediate.toString(16);
@@ -27,29 +27,33 @@ function convertint(intermediate){
   var encodedword = intermediate_3.toString(16);
 
 //  if(encodedword == 0){encodedword = "0000";}
-  console.log("encoded word " +encodedword);
+  console.log("Unencoded value: "+unencoded+ " Encoded hex " +encodedword);
 
 }
 
-//convertint(0);
-//convertint(-8192);
+//test case
+// convertint(0);
+// convertint(-8192);
 // convertint(8191);
-// convertint(-4096);
 // convertint(2048);
-// convertint(6111);
-//convertint(2628);
+// convertint(-4096);
 
 
-
-
+//project case
+convertint(6111)
+convertint(340)
+convertint(-2628)
+convertint(-255)
+convertint(7550)
 
 
 //converts text to integer
 
 function convertbytes(encodedinital){
 
+
   var intermediate = parseInt(encodedinital, 16);
-  console.log(intermediate);
+
 
   var intermediate_2 = intermediate;
   var intermediate_3 = intermediate;
@@ -58,15 +62,21 @@ function convertbytes(encodedinital){
   intermediate_1 = intermediate_1 -8192;
 
 //  var intermediatehex = intermediate_1.toString(16);
-  console.log("encoded word " +intermediate_1);
+  console.log("Encoded hex: "+encodedinital+" Unencoded Value: " +intermediate_1);
 }
 
 
+//test case
+// convertbytes("4000");
+// convertbytes("0000");
+// convertbytes("7f7f");
+// convertbytes("5000");
+// convertbytes("0A05");
+// convertbytes("5500");
 
-convertbytes("4000");
-convertbytes("0000");
-convertbytes("7f7f");
-convertbytes("5000");
-convertbytes("0A05");
-convertbytes("5500");
-
+// //project case
+convertbytes("0A0A");
+convertbytes("0029");
+convertbytes("3F0F");
+convertbytes("4400");
+convertbytes("5e7F");
