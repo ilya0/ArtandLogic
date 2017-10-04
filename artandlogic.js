@@ -1,25 +1,41 @@
 //converts int to special text
 
-function convertint(integer){
+function convertint(intermediate){
+
   //add 8192 to raw value
-  intermediate = integer+8192
+  var intermediate = intermediate+8192;
+   console.log("intermediate decimal is "+intermediate);
+
+  //intermediate decimal
+  var hexString = intermediate.toString(16);
+  console.log("intermediate hex " + hexString);
+
+
+  var intermediate_1 = (intermediate / 128);
   console.log("intermediate decimal is "+intermediate);
-  hexString = intermediate.toString(16);
-  console.log("hex "+hexString);
+
+ // encoded upper byte
+ var upperbyte = intermediate_1.toString(16);
+  console.log("upper byte " +upperbyte);
+
+
 
 }
 
+
+
+
 // //converts text to integer
 // function convertbytes(hi,lo){
-
 //   yourNumber = parseInt(hexString, 16);
 //   console.log(text);
 // }
 
 convertint(0);
-convertint(-8192);
-convertint(8191);
-convertint(-4096);
+
+// convertint(-8192);
+// convertint(8191);
+// convertint(-4096);
 
 
 // convertbytes(40,00);
