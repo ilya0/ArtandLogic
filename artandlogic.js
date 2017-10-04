@@ -20,8 +20,8 @@ function convertint(intermediate){
   //lower byte
  var intermediate_21 = intermediate;
  var intermediate_2 = (intermediate_21 &= 0x7F);
-  var lowerbyte = intermediate_2.toString(16);
-  console.log("lower byte " +lowerbyte);
+//  var lowerbyte = intermediate_2.toString(16);
+//  console.log("lower byte " +lowerbyte);
 
    var intermediate_3 = intermediate_2 + ((intermediate &= 0xFF80)<<1);
  var encodedword = intermediate_3.toString(16);
@@ -31,13 +31,13 @@ function convertint(intermediate){
 
 }
 
-// convertint(0);
+//convertint(0);
 //convertint(-8192);
 // convertint(8191);
 // convertint(-4096);
 // convertint(2048);
 // convertint(6111);
-// convertint(2628);
+ convertint(2628);
 
 
 
